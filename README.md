@@ -70,25 +70,25 @@ In the /route folder, we define two route
 
 inside the getUrl.js 
 
-/url/:id --> to get the redirect url by id 
-in this file, we put every request inside queue at first, and once we want to send the redirect url, we need to pass it by order
-and before we redirect the url, we will have some basic logic which can check about this url
+    /url/:id --> to get the redirect url by id 
+    in this file, we put every request inside queue at first, and once we want to send the redirect url, we need to pass it by order
+    and before we redirect the url, we will have some basic logic which can check about this url
 
 
 inside the postUrl.js 
 
-/url --> to upload the url by http post method 
-in this file, we will get the user upload url and expired time 
-firstly, we will check the url is valid or not 
-secondly, we will check the upload time (by iso time format) is expired or not 
-eventually, pass the data with a generated ID (by uuidv4) into redis
+    /url --> to upload the url by http post method 
+    in this file, we will get the user upload url and expired time 
+    firstly, we will check the url is valid or not 
+    secondly, we will check the upload time (by iso time format) is expired or not 
+    eventually, pass the data with a generated ID (by uuidv4) into redis
 
 
 inside /option folder, we define a option.js (this file is similar to mongodb schema) 
 
-in this file, every route option can be define here 
-for example, we define when the http post reqeuest success (/url in postUrl.js), once the status code is 201 (success post)
-we will response the specific type of object and it's property, and we also define the upload parameter type and property
+    in this file, every route option can be define here 
+    for example, we define when the http post reqeuest success (/url in postUrl.js), once the status code is 201 (success post)
+    we will response the specific type of object and it's property, and we also define the upload parameter type and property
 
 
 A special route is /doc that have a whole page showing the avaliable route
