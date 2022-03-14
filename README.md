@@ -40,7 +40,7 @@ pino-pretty --> organize the better log \
 uuidv4 --> create the unique ID that can identify the data
 
 ## The concept about this sever organziation
-Due to we are creating the microservice, we don't need to consider about UI part \
+Due to we are creating the microservice, we don't need to consider about UI part
 
 At the server part, I choose fastify \
 Fasitfy has below advantage: \
@@ -48,14 +48,14 @@ Fasitfy has below advantage: \
     2. easy way to create a specific route to use \
     3. clear route schema that can help with validation and increase the API error handle \
     4. light amount of file size \
-    5. newest package that can build the microservice easily \
+    5. newest package that can build the microservice easily
 
 At the database part, I choose redis \
 Redis has below advantage: \
     1. key - value pair data format that can easily store the javascript object \
     2. fast in CRUD \
 Due to the URL will be expired, so I consider this as a cache database, and if we keep building the real app
-this URL upload system won't affect toward the permanent data (like user information) \
+this URL upload system won't affect toward the permanent data (like user information)
 
 At the third-party library part, I choose serveral unique lib such as fastify-swagger and fastify-queue. \
 If we need to publish our api for client side, we need to create a full documantation page that can reference (route is /doc)
@@ -63,7 +63,7 @@ As for the queue, we need to push our request sequentially (Fisrt in first serve
 
 ----------------------------------------------------------------
 
-In the /route folder, we define two route \
+In the /route folder, we define two route
 
 inside the getUrl.js \
 /url/:id --> to get the redirect url by id \
@@ -75,12 +75,12 @@ inside the postUrl.js \
 in this file, we will get the user upload url and expired time \
 firstly, we will check the url is valid or not \
 secondly, we will check the upload time (by iso time format) is expired or not \
-eventually, pass the data with a generated ID (by uuidv4) into redis \
+eventually, pass the data with a generated ID (by uuidv4) into redis
 
 inside /option folder, we define a option.js (this file is similar to mongodb schema) \
 in this file, every route option can be define here \
 for example, we define when the http post reqeuest success (/url in postUrl.js), once the status code is 201 (success post)
-we will response the specific type of object and it's property, and we also define the upload parameter type and property \
+we will response the specific type of object and it's property, and we also define the upload parameter type and property
 
 A special route is /doc that have a whole page showing the avaliable route
 
