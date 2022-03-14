@@ -58,7 +58,7 @@ Due to the URL will be expired, so I consider this as a cache database, and if w
 this URL upload system won't affect toward the permanent data (like user information)
 
 At the third-party library part, I choose serveral unique lib such as fastify-swagger and fastify-queue. \
-If we need to publish our api for client side, we need to create a full documantation page that can reference (route is /doc)
+If we need to publish our api for client side, we need to create a full documantation page that can reference (route is /doc) \
 As for the queue, we need to push our request sequentially (Fisrt in first serve)
 
 ----------------------------------------------------------------
