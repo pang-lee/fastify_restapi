@@ -7,7 +7,7 @@ An application that can upload specific URL and get the shorter url
 
 ## How the application file and folder organization
 In the whole folder
-server.js is the server initial entry point
+server.js is the server initial entry point \
 app.js is the configuration file about the fastify server and the plugin
 app.test.js is the unit test about the application
 test.http is the API testing file (like postman)
