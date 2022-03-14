@@ -1,0 +1,25 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "node app.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@autotelic/fastify-bee-queue": "^0.1.0",
+    "fastify": "^3.27.2",
+    "fastify-plugin": "^3.0.1",
+    "fastify-redis": "^4.3.3",
+    "fastify-swagger": "^4.17.0",
+    "pino-pretty": "^7.5.1",
+    "uuidv4": "^6.2.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
