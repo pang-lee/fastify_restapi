@@ -45,18 +45,18 @@ Due to we are creating the microservice, we don't need to consider about UI part
 At the server part, I choose fastify \
 Fasitfy has below advantage: \
 
-    1. the fastest server compare with other node framework (about 30% faster than express) \
-    2. easy way to create a specific route to use \
-    3. clear route schema that can help with validation and increase the API error handle \
-    4. light amount of file size \
+    1. the fastest server compare with other node framework (about 30% faster than express) 
+    2. easy way to create a specific route to use 
+    3. clear route schema that can help with validation and increase the API error handle 
+    4. light amount of file size 
     5. newest package that can build the microservice easily
 
 At the database part, I choose redis \
 Redis has below advantage: \
 
-    1. key - value pair data format that can easily store the javascript object \
-    2. fast in CRUD \
-    
+    1. key - value pair data format that can easily store the javascript object 
+    2. fast in CRUD 
+
 Due to the URL will be expired, so I consider this as a cache database, and if we keep building the real app
 this URL upload system won't affect toward the permanent data (like user information)
 
