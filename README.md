@@ -93,6 +93,10 @@ so it can make our folder structure look more clear
 
 and if we later want to add more functionality, we just need to base on our folder or file
 
+----------------------------------------------------------------
+## Missing function
+miss a function that inside the getUrl.js, we have to check the url is upload inside database or not
+
 ## Available Scripts
 In the project directory, you can run:
 
