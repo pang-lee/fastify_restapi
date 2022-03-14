@@ -27,7 +27,7 @@ option.js is the fastify route option parameter include the return type and http
 
 ## The third-party library
 devDependency: \
-nodemon --> help that we don't need to reload the entire application (auto reload) during devlopment \
+nodemon --> help that we don't need to reload the entire application (auto reload) during devlopment
 
 ----------------------------------------------------------------
 
@@ -37,7 +37,7 @@ fastify-plugin --> create the manual fastify plugin \
 fastify-redis --> easier way to interact with the redis \
 fastify-swagger --> create a swagger page that can show all the avaliable route api (like API documentation) \
 pino-pretty --> organize the better log \
-uuidv4 --> create the unique ID that can identify the data \
+uuidv4 --> create the unique ID that can identify the data
 
 ## The concept about this sever organziation
 Due to we are creating the microservice, we don't need to consider about UI part \
