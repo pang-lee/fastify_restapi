@@ -68,7 +68,7 @@ In the /route folder, we define two route
 inside the getUrl.js \
 /url/:id --> to get the redirect url by id \
 in this file, we put every request inside queue at first, and once we want to send the redirect url, we need to pass it by order
-and before we redirect the url, we will have some basic logic which can check about this url \
+and before we redirect the url, we will have some basic logic which can check about this url
 
 inside the postUrl.js \
 /url --> to upload the url by http post method \
