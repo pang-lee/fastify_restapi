@@ -91,7 +91,7 @@ for example, we define when the http post reqeuest success (/url in postUrl.js),
 we will response the specific type of object and it's property, and we also define the upload parameter type and property
 
 
-A special route is /doc that have a whole page showing the avaliable route
+A special route is /doc that have a whole page showing the avaliable route (define inside app.js)
 
 ----------------------------------------------------------------
 
