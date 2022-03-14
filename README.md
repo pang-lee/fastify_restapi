@@ -43,7 +43,7 @@ uuidv4 --> create the unique ID that can identify the data
 Due to we are creating the microservice, we don't need to consider about UI part
 
 At the server part, I choose fastify \
-Fasitfy has below advantage: \
+Fasitfy has below advantage: 
 
     1. the fastest server compare with other node framework (about 30% faster than express) 
     2. easy way to create a specific route to use 
@@ -52,7 +52,7 @@ Fasitfy has below advantage: \
     5. newest package that can build the microservice easily
 
 At the database part, I choose redis \
-Redis has below advantage: \
+Redis has below advantage: 
 
     1. key - value pair data format that can easily store the javascript object 
     2. fast in CRUD 
@@ -68,22 +68,28 @@ As for the queue, we need to push our request sequentially (Fisrt in first serve
 
 In the /route folder, we define two route
 
-inside the getUrl.js \
-/url/:id --> to get the redirect url by id \
+inside the getUrl.js 
+
+/url/:id --> to get the redirect url by id 
 in this file, we put every request inside queue at first, and once we want to send the redirect url, we need to pass it by order
 and before we redirect the url, we will have some basic logic which can check about this url
 
-inside the postUrl.js \
-/url --> to upload the url by http post method \
-in this file, we will get the user upload url and expired time \
-firstly, we will check the url is valid or not \
-secondly, we will check the upload time (by iso time format) is expired or not \
+
+inside the postUrl.js 
+
+/url --> to upload the url by http post method 
+in this file, we will get the user upload url and expired time 
+firstly, we will check the url is valid or not 
+secondly, we will check the upload time (by iso time format) is expired or not 
 eventually, pass the data with a generated ID (by uuidv4) into redis
 
-inside /option folder, we define a option.js (this file is similar to mongodb schema) \
-in this file, every route option can be define here \
+
+inside /option folder, we define a option.js (this file is similar to mongodb schema) 
+
+in this file, every route option can be define here 
 for example, we define when the http post reqeuest success (/url in postUrl.js), once the status code is 201 (success post)
 we will response the specific type of object and it's property, and we also define the upload parameter type and property
+
 
 A special route is /doc that have a whole page showing the avaliable route
 
