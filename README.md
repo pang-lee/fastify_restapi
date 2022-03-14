@@ -87,8 +87,8 @@ eventually, pass the data with a generated ID (by uuidv4) into redis
 inside /option folder, we define a option.js (this file is similar to mongodb schema) 
 
     in this file, every route option can be define here 
-    for example, we define when the http post reqeuest success (/url in postUrl.js), once the status code is 201 (success post)
-    we will response the specific type of object and it's property, and we also define the upload parameter type and property
+for example, we define when the http post reqeuest success (/url in postUrl.js), once the status code is 201 (success post)
+we will response the specific type of object and it's property, and we also define the upload parameter type and property
 
 
 A special route is /doc that have a whole page showing the avaliable route
