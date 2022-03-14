@@ -94,7 +94,6 @@ so it can make our folder structure look more clear
 and if we later want to add more functionality, we just need to base on our folder or file
 
 ## Available Scripts
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 In the project directory, you can run:
 
 ### `npm start`
